@@ -3,6 +3,7 @@ const fs = require('fs');
 const CASA = 'CMSALVADOR';
 const URL = 'https://cmsalvador.sys.inf.br/cl/prop_interna/';
 const ARQUIVO_ESTADO = 'estado.json';
+const MAX_PAGES = Number(process.env.MAX_PAGES || 8);
 
 function carregarEstado() {
   if (fs.existsSync(ARQUIVO_ESTADO)) return JSON.parse(fs.readFileSync(ARQUIVO_ESTADO, 'utf8'));
@@ -113,13 +114,67 @@ function extrairProposicoes(html) {
   return itens;
 }
 
-async function buscarProposicoes() {
-  const res = await fetch(URL, { headers: { 'User-Agent': 'Mozilla/5.0 Chrome/120', 'Accept': 'text/html' }, signal: AbortSignal.timeout(30000) });
+function extrairCookie(headers) {
+  const setCookie = headers.get('set-cookie');
+  if (!setCookie) return '';
+  return setCookie.split(',').map(c => c.split(';')[0].trim()).join('; ');
+}
+
+function proximoOffset(html) {
+  const match = html.match(/nm_gp_rec_fim\s*=\s*["'](\d+)["']/);
+  return match ? match[1] : null;
+}
+
+async function carregarPagina(offset = null, cookie = '') {
+  const headers = { 'User-Agent': 'Mozilla/5.0 Chrome/120', 'Accept': 'text/html' };
+  let options = { headers, signal: AbortSignal.timeout(30000) };
+  if (offset) {
+    const body = new URLSearchParams({
+      nmgp_opcao: 'rec',
+      rec: offset,
+      nm_call_php: '',
+      script_case_init: '5750',
+    });
+    options = {
+      method: 'POST',
+      headers: { ...headers, 'Content-Type': 'application/x-www-form-urlencoded', Cookie: cookie },
+      body,
+      signal: AbortSignal.timeout(30000),
+    };
+  }
+  const res = await fetch(URL, options);
   if (!res.ok) throw new Error(`HTTP ${res.status} em Salvador`);
-  const html = await res.text();
-  const itens = extrairProposicoes(html);
-  console.log(`Grade Scriptcase: ${itens.length} proposições na primeira página.`);
-  return itens;
+  return { html: await res.text(), cookie: extrairCookie(res.headers) || cookie };
+}
+
+async function buscarProposicoes(idsVistos = new Set()) {
+  const todas = [];
+  const idsPagina = new Set();
+  let offset = null;
+  let cookie = '';
+
+  for (let pagina = 1; pagina <= MAX_PAGES; pagina++) {
+    const resposta = await carregarPagina(offset, cookie);
+    cookie = resposta.cookie;
+    const itens = extrairProposicoes(resposta.html);
+    console.log(`Grade Scriptcase página ${pagina}: ${itens.length} proposições.`);
+    if (itens.length === 0) break;
+
+    let paginaTemVisto = false;
+    for (const item of itens) {
+      if (idsVistos.has(item.id)) paginaTemVisto = true;
+      if (!idsPagina.has(item.id)) {
+        idsPagina.add(item.id);
+        todas.push(item);
+      }
+    }
+
+    offset = proximoOffset(resposta.html);
+    if (!offset) break;
+    if (paginaTemVisto && process.env.SEED_ONLY !== '1') break;
+  }
+
+  return todas;
 }
 
 function renderAlertasSaltos(alertas) {
@@ -156,7 +211,7 @@ async function enviarEmail(novas, alertas = []) {
   console.log('Iniciando Monitor Proposições Salvador...');
   const estado = carregarEstado();
   const ids = new Set((estado.proposicoes_vistas || []).map(String));
-  const proposicoes = await buscarProposicoes();
+  const proposicoes = await buscarProposicoes(ids);
   const novas = proposicoes.filter(p => !ids.has(p.id));
   const { alertas, atuais } = detectarSaltos(proposicoes, estado);
   console.log(`Total: ${proposicoes.length} | Novas: ${novas.length}`);
