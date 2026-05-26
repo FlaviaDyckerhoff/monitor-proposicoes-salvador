@@ -132,9 +132,20 @@
     "PIN-232/2026|25/05/2026|Paulo Magalhães Júnior",
     "PLE-155/2026|25/05/2026|Hélio Lula Ferreira",
     "PIN-234/2026|25/05/2026|Felipe Santana",
-    "PIN-227/2026|25/05/2026|Ricardo Almeida"
+    "PIN-227/2026|25/05/2026|Ricardo Almeida",
+    "MOC-194/2026|26/05/2026|Eliete Paraguassu",
+    "PIN-242/2026|26/05/2026|Randerson Leal",
+    "MOC-193/2026|26/05/2026|Professor Hamilton",
+    "PLE-160/2026|26/05/2026|Marta Lula Rodrigues",
+    "MOC-189/2026|26/05/2026|Sandro Filho",
+    "PIN-241/2026|26/05/2026|André Fraga",
+    "MOC-190/2026|26/05/2026|Sandro Filho",
+    "PLE-159/2026|26/05/2026|Kiki Bispo",
+    "MOC-191/2026|26/05/2026|Sandro Filho",
+    "PLE-158/2026|26/05/2026|João Cláudio Bacelar",
+    "MOC-192/2026|26/05/2026|João Cláudio Bacelar"
   ],
-  "ultima_execucao": "2026-05-25T20:25:12.769Z",
+  "ultima_execucao": "2026-05-26T13:53:15.007Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 194,
     "PLE|2026": 160,
