@@ -157,16 +157,22 @@
     "PIN-250/2026|26/05/2026|Sandro Filho",
     "MOC-195/2026|26/05/2026|Sandro Filho",
     "PLE-162/2026|26/05/2026|Marcelo Guimarães Neto",
-    "PIN-249/2026|26/05/2026|Sandro Filho"
+    "PIN-249/2026|26/05/2026|Sandro Filho",
+    "REP-117/2026|27/05/2026|Silvio Humberto",
+    "MOC-198/2026|27/05/2026|Marta Lula Rodrigues",
+    "MOC-199/2026|27/05/2026|Sandro Filho",
+    "MOC-200/2026|27/05/2026|Sandro Filho",
+    "MOC-194/2026|27/05/2026|Eliete Paraguassu",
+    "PIN-242/2026|27/05/2026|Randerson Leal"
   ],
-  "ultima_execucao": "2026-05-26T20:57:52.255Z",
+  "ultima_execucao": "2026-05-27T14:26:17.703Z",
   "ultimos_por_tipo_ano": {
-    "MOC|2026": 197,
+    "MOC|2026": 200,
     "PLE|2026": 162,
     "PIN|2026": 251,
     "PRE|2026": 53,
     "RUP|2026": 14,
-    "REP|2026": 116,
+    "REP|2026": 117,
     "PDL|2026": 1
   }
 }
