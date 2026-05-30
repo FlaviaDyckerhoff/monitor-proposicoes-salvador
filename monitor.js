@@ -193,7 +193,7 @@ async function enviarEmail(novas, alertas = []) {
   const nodemailer = require('nodemailer');
   const transporter = nodemailer.createTransport({ service: 'gmail', auth: { user: process.env.EMAIL_REMETENTE, pass: process.env.EMAIL_SENHA } });
   const linhas = novas.map(p => `<tr>
-    <td style="padding:8px;border-bottom:1px solid #eee"><strong>${escapeHtml(p.proposicao)}</strong><br><span style="font-size:11px;color:#667085">${escapeHtml(p.situacao)}</span></td>
+    <td style="padding:8px;border-bottom:1px solid #eee"><a href="${escapeHtml(p.link)}" style="color:#1a3a5c;text-decoration:none"><strong>${escapeHtml(p.proposicao)}</strong></a><br><span style="font-size:11px;color:#667085">${escapeHtml(p.situacao)}</span></td>
     <td style="padding:8px;border-bottom:1px solid #eee">${escapeHtml(p.autor)}</td>
     <td style="padding:8px;border-bottom:1px solid #eee;white-space:nowrap">${escapeHtml(p.data)}</td>
     <td style="padding:8px;border-bottom:1px solid #eee">${escapeHtml(p.ementa)}</td>
