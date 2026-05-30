@@ -183,6 +183,35 @@ function renderAlertasSaltos(alertas) {
   return `<div style="background:#fff4e5;border:1px solid #f59e0b;color:#7c2d12;padding:12px 14px;margin:12px 0;border-radius:4px"><strong>Alerta de sequência:</strong><ul style="margin:8px 0 0 18px;padding:0">${itens}</ul></div>`;
 }
 
+function prioridadeTipoEmail(tipo) {
+  const t = String(tipo || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toUpperCase()
+    .trim();
+
+  if (/^(PL|PLO)(\b|$)/.test(t) || /^PROJETO DE LEI( ORDINARIA)?$/.test(t)) return 0;
+  if (/^PLC(\b|$)/.test(t) || /^PROJETO DE LEI COMPLEMENTAR/.test(t)) return 1;
+  if (/^PEC(\b|$)/.test(t) || /^(PROPOSTA|PROJETO) DE EMENDA (A )?CONSTITUCIONAL/.test(t)) return 2;
+  return 10;
+}
+
+function numeroProposicaoEmail(p) {
+  const n = Number(String(p?.numero || '').replace(/\D/g, ''));
+  return Number.isFinite(n) ? n : 0;
+}
+
+function compararProposicoesEmail(a, b) {
+  const tipoA = a?.sigla || a?.tipo || '';
+  const tipoB = b?.sigla || b?.tipo || '';
+  const prioridadeA = prioridadeTipoEmail(tipoA);
+  const prioridadeB = prioridadeTipoEmail(tipoB);
+  if (prioridadeA !== prioridadeB) return prioridadeA - prioridadeB;
+  const tipoCmp = String(tipoA).localeCompare(String(tipoB), 'pt-BR');
+  if (tipoCmp !== 0) return tipoCmp;
+  return numeroProposicaoEmail(b) - numeroProposicaoEmail(a);
+}
+
 async function enviarEmail(novas, alertas = []) {
   if (process.env.DRY_RUN_EMAIL === '1') {
     console.log(`[DRY_RUN_EMAIL] ${novas.length} proposições novas.`);
@@ -192,7 +221,8 @@ async function enviarEmail(novas, alertas = []) {
   }
   const nodemailer = require('nodemailer');
   const transporter = nodemailer.createTransport({ service: 'gmail', auth: { user: process.env.EMAIL_REMETENTE, pass: process.env.EMAIL_SENHA } });
-  const linhas = novas.map(p => `<tr>
+  const novasOrdenadas = [...novas].sort(compararProposicoesEmail);
+  const linhas = novasOrdenadas.map(p => `<tr>
     <td style="padding:8px;border-bottom:1px solid #eee"><a href="${escapeHtml(p.link)}" style="color:#1a3a5c;text-decoration:none"><strong>${escapeHtml(p.proposicao)}</strong></a><br><span style="font-size:11px;color:#667085">${escapeHtml(p.situacao)}</span></td>
     <td style="padding:8px;border-bottom:1px solid #eee">${escapeHtml(p.autor)}</td>
     <td style="padding:8px;border-bottom:1px solid #eee;white-space:nowrap">${escapeHtml(p.data)}</td>
