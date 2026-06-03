@@ -350,14 +350,25 @@
     "MOC-200/2026|01/06/2026|Sandro Filho",
     "MOC-199/2026|01/06/2026|Sandro Filho",
     "MOC-198/2026|01/06/2026|Marta Lula Rodrigues",
-    "REP-117/2026|01/06/2026|Silvio Humberto"
+    "REP-117/2026|01/06/2026|Silvio Humberto",
+    "PRE-54/2026|03/06/2026|Silvio Humberto",
+    "PIN-289/2026|03/06/2026|Isabela Sousa",
+    "PLE-170/2026|03/06/2026|Isabela Sousa",
+    "MOC-206/2026|03/06/2026|Sandro Filho",
+    "PIN-286/2026|03/06/2026|Isabela Sousa",
+    "PLE-169/2026|03/06/2026|Isabela Sousa",
+    "PIN-287/2026|03/06/2026|Isabela Sousa",
+    "MOC-205/2026|03/06/2026|Sandro Filho",
+    "MOC-207/2026|03/06/2026|Sandro Filho",
+    "PIN-288/2026|03/06/2026|Isabela Sousa",
+    "PLE-171/2026|03/06/2026|Isabela Sousa"
   ],
-  "ultima_execucao": "2026-06-02T21:54:09.676Z",
+  "ultima_execucao": "2026-06-03T15:27:01.450Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 207,
     "PLE|2026": 171,
     "PIN|2026": 289,
-    "PRE|2026": 52,
+    "PRE|2026": 54,
     "RUP|2026": 14,
     "REP|2026": 117,
     "PDL|2026": 1
