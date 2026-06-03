@@ -361,9 +361,17 @@
     "MOC-205/2026|03/06/2026|Sandro Filho",
     "MOC-207/2026|03/06/2026|Sandro Filho",
     "PIN-288/2026|03/06/2026|Isabela Sousa",
-    "PLE-171/2026|03/06/2026|Isabela Sousa"
+    "PLE-171/2026|03/06/2026|Isabela Sousa",
+    "PIN-275/2026|03/06/2026|Felipe Santana",
+    "PLE-166/2026|03/06/2026|Cezar Leite",
+    "PIN-285/2026|03/06/2026|Felipe Santana",
+    "PIN-263/2026|03/06/2026|Felipe Santana",
+    "PIN-279/2026|03/06/2026|Felipe Santana",
+    "PIN-268/2026|03/06/2026|Felipe Santana",
+    "PIN-281/2026|03/06/2026|Sandro Filho",
+    "PIN-273/2026|03/06/2026|Felipe Santana"
   ],
-  "ultima_execucao": "2026-06-03T15:27:01.450Z",
+  "ultima_execucao": "2026-06-03T21:55:13.264Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 207,
     "PLE|2026": 171,
