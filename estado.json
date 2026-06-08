@@ -383,13 +383,15 @@
     "REP-119/2026|08/06/2026|Silvio Humberto",
     "MOC-213/2026|08/06/2026|Sandro Filho",
     "PRE-54/2026|08/06/2026|Silvio Humberto",
-    "PLE-170/2026|08/06/2026|Isabela Sousa"
+    "PLE-170/2026|08/06/2026|Isabela Sousa",
+    "PIN-291/2026|08/06/2026|Randerson Leal",
+    "PIN-290/2026|08/06/2026|Randerson Leal"
   ],
-  "ultima_execucao": "2026-06-08T14:47:03.190Z",
+  "ultima_execucao": "2026-06-08T21:12:07.823Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 215,
     "PLE|2026": 170,
-    "PIN|2026": 289,
+    "PIN|2026": 291,
     "PRE|2026": 54,
     "RUP|2026": 15,
     "REP|2026": 120,
