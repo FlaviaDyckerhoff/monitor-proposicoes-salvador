@@ -439,15 +439,21 @@
     "PLE-176/2026|10/06/2026|Felipe Santana",
     "PRE-56/2026|10/06/2026|Carlos Muniz",
     "PIN-294/2026|10/06/2026|Luiz Carlos",
-    "PLE-175/2026|10/06/2026|Cezar Leite"
+    "PLE-175/2026|10/06/2026|Cezar Leite",
+    "PLE-178/2026|10/06/2026|Felipe Santana",
+    "RUP-17/2026|10/06/2026|Alex Alemão",
+    "PLE-182/2026|10/06/2026|Felipe Santana",
+    "PLE-181/2026|10/06/2026|André Fraga",
+    "PLE-180/2026|10/06/2026|Professor Hamilton",
+    "PIN-296/2026|10/06/2026|Téo Senna"
   ],
-  "ultima_execucao": "2026-06-10T14:21:33.842Z",
+  "ultima_execucao": "2026-06-10T21:27:03.494Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 221,
-    "PLE|2026": 177,
-    "PIN|2026": 295,
+    "PLE|2026": 182,
+    "PIN|2026": 296,
     "PRE|2026": 56,
-    "RUP|2026": 16,
+    "RUP|2026": 17,
     "REP|2026": 129,
     "PDL|2026": 1
   }
