@@ -749,13 +749,17 @@
     "MOC-237/2026|17/06/2026|Kel Torres",
     "MOC-238/2026|17/06/2026|Kel Torres",
     "MOC-233/2026|17/06/2026|Tiago Queiroz",
-    "MOC-234/2026|17/06/2026|Tiago Queiroz"
+    "MOC-234/2026|17/06/2026|Tiago Queiroz",
+    "PIN-384/2026|18/06/2026|André Fraga",
+    "PIN-383/2026|18/06/2026|André Fraga",
+    "PIN-385/2026|18/06/2026|André Fraga",
+    "PIN-386/2026|18/06/2026|Felipe Santana"
   ],
-  "ultima_execucao": "2026-06-18T11:45:25.207Z",
+  "ultima_execucao": "2026-06-19T08:41:50.959Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 239,
-    "PLE|2026": 192,
-    "PIN|2026": 382,
+    "PLE|2026": 189,
+    "PIN|2026": 386,
     "PRE|2026": 66,
     "RUP|2026": 19,
     "REP|2026": 130,
