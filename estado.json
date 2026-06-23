@@ -808,10 +808,10 @@
     "PIN-353/2026|18/06/2026|André Fraga",
     "MOC-236/2026|17/06/2026|Kel Torres"
   ],
-  "ultima_execucao": "2026-06-22T08:39:55.137Z",
+  "ultima_execucao": "2026-06-23T08:39:39.536Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 239,
-    "PLE|2026": 192,
+    "PLE|2026": 189,
     "PIN|2026": 386,
     "PRE|2026": 66,
     "RUP|2026": 19,
