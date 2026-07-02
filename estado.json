@@ -931,9 +931,11 @@
     "PLE-196/2026|30/06/2026|João Cláudio Bacelar",
     "PIN-390/2026|30/06/2026|André Fraga",
     "PIN-393/2026|30/06/2026|André Fraga",
-    "PIN-394/2026|30/06/2026|André Fraga"
+    "PIN-394/2026|30/06/2026|André Fraga",
+    "PIN-405/2026|01/07/2026|Eliete Paraguassu",
+    "PIN-404/2026|01/07/2026|André Fraga"
   ],
-  "ultima_execucao": "2026-07-01T08:42:43.493Z",
+  "ultima_execucao": "2026-07-02T08:42:41.192Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 252,
     "PLE|2026": 204,
