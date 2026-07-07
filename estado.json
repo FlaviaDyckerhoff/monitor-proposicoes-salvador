@@ -933,9 +933,19 @@
     "PIN-393/2026|30/06/2026|André Fraga",
     "PIN-394/2026|30/06/2026|André Fraga",
     "PIN-405/2026|01/07/2026|Eliete Paraguassu",
-    "PIN-404/2026|01/07/2026|André Fraga"
+    "PIN-404/2026|01/07/2026|André Fraga",
+    "MOC-245/2026|06/07/2026|Sandro Filho",
+    "PIN-407/2026|06/07/2026|Marta Lula Rodrigues",
+    "PLE-204/2026|06/07/2026|André Fraga",
+    "MOC-251/2026|06/07/2026|Omarzinho Gordilho",
+    "MOC-249/2026|06/07/2026|Sandro Filho",
+    "MOC-247/2026|06/07/2026|Sandro Filho",
+    "MOC-248/2026|06/07/2026|Sandro Filho",
+    "MOC-246/2026|06/07/2026|Sandro Filho",
+    "MOC-250/2026|06/07/2026|Sandro Filho",
+    "MOC-252/2026|06/07/2026|Sandro Filho"
   ],
-  "ultima_execucao": "2026-07-06T08:42:40.331Z",
+  "ultima_execucao": "2026-07-07T08:42:43.140Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 252,
     "PLE|2026": 204,
