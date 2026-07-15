@@ -947,9 +947,15 @@
     "PIN-405/2026|07/07/2026|Eliete Paraguassu",
     "PIN-404/2026|07/07/2026|André Fraga",
     "PIN-405/2026|08/07/2026|Eliete Paraguassu",
-    "PIN-404/2026|08/07/2026|André Fraga"
+    "PIN-404/2026|08/07/2026|André Fraga",
+    "PIN-407/2026|14/07/2026|Marta Lula Rodrigues",
+    "PLE-204/2026|14/07/2026|André Fraga",
+    "PLE-200/2026|14/07/2026|Isabela Sousa",
+    "PLE-198/2026|14/07/2026|André Fraga",
+    "PLE-201/2026|14/07/2026|André Fraga",
+    "PLE-202/2026|14/07/2026|André Fraga"
   ],
-  "ultima_execucao": "2026-07-14T08:42:47.838Z",
+  "ultima_execucao": "2026-07-15T08:42:36.646Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 252,
     "PLE|2026": 204,
