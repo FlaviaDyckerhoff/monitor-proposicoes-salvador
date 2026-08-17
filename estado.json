@@ -1737,17 +1737,19 @@
     "MOC-298/2026|14/08/2026|Aladilce",
     "MOC-302/2026|14/08/2026|Sandro Filho",
     "MOC-291/2026|14/08/2026|Aladilce",
-    "MOC-288/2026|14/08/2026|Sandro Filho"
+    "MOC-288/2026|14/08/2026|Sandro Filho",
+    "PLE-9999/2025|17/08/2026|João Marcelo"
   ],
-  "ultima_execucao": "2026-08-16T22:22:33.159Z",
+  "ultima_execucao": "2026-08-17T08:42:56.389Z",
   "ultimos_por_tipo_ano": {
-    "MOC|2026": 302,
+    "MOC|2026": 301,
     "PLE|2026": 251,
     "PIN|2026": 563,
     "PRE|2026": 74,
     "RUP|2026": 23,
     "REP|2026": 140,
     "PDL|2026": 1,
-    "PLC|2026": 4
+    "PLC|2026": 4,
+    "PLE|2025": 9999
   }
 }
