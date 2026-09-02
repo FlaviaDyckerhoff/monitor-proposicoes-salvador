@@ -280,6 +280,17 @@ function clienteAtivoParaDestaque(nome) {
   return !CLIENTES_INATIVOS_NAO_DESTACAR.some(inativo => inativo.toLowerCase() === String(nome || '').toLowerCase());
 }
 
+let promoverInteresseClienteProposicao = (_item, atuais) => Array.isArray(atuais) ? atuais : [];
+try {
+  try {
+    ({ promoverInteresseClienteProposicao } = require('./client_interest_matcher_js'));
+  } catch (_localErr) {
+    ({ promoverInteresseClienteProposicao } = require('../../agents/pautas/client_interest_matcher_js'));
+  }
+} catch (err) {
+  console.warn('⚠️ Matcher cliente/palavra comum indisponível; usando destaque legado: ' + err.message);
+}
+
 function clientesCitadosNaProposicao(p) {
   const texto = [p.cliente, p.clientes, p.autor, p.autores, p.tipo, p.rotulo, p.titulo, p.identificacao, p.ementa]
     .filter(Boolean)
@@ -630,16 +641,6 @@ async function enviarEmail(novas, alertas = []) {
     return;
   }
   const nodemailer = require('nodemailer');
-let promoverInteresseClienteProposicao = (_item, atuais) => Array.isArray(atuais) ? atuais : [];
-try {
-  try {
-    ({ promoverInteresseClienteProposicao } = require('./client_interest_matcher_js'));
-  } catch (_localErr) {
-    ({ promoverInteresseClienteProposicao } = require('../../agents/pautas/client_interest_matcher_js'));
-  }
-} catch (err) {
-  console.warn('⚠️ Matcher cliente/palavra comum indisponível; usando destaque legado: ' + err.message);
-}
 
 function mlClientInterestContext() {
   return {
