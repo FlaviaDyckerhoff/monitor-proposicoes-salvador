@@ -12,7 +12,7 @@ const CONTROLE03_FORCE_LATEST = String(process.env.CONTROLE03_FORCE_LATEST || ''
 const fs = require('fs');
 const RADAR03_URL = process.env.RADAR03_URL || 'https://doe.monitorlegislativo.com.br/controle03/';
 const CASA_RADAR03 = process.env.CASA_RADAR03 || 'BA - Salvador';
-const CONTROLE03_STATE_URL = process.env.CONTROLE03_STATE_URL || new URL('api/state', RADAR03_URL).toString();
+const CONTROLE03_STATE_URL = process.env.CONTROLE03_STATE_URL || new globalThis.URL('api/state', RADAR03_URL).toString();
 const CONTROLE03_API_USER = process.env.CONTROLE03_API_USER || '';
 const CONTROLE03_API_PASS = process.env.CONTROLE03_API_PASS || '';
 const CONTROLE03_BASIC_AUTH = process.env.CONTROLE03_BASIC_AUTH || '';
@@ -280,6 +280,7 @@ function clienteAtivoParaDestaque(nome) {
   return !CLIENTES_INATIVOS_NAO_DESTACAR.some(inativo => inativo.toLowerCase() === String(nome || '').toLowerCase());
 }
 
+
 let promoverInteresseClienteProposicao = (_item, atuais) => Array.isArray(atuais) ? atuais : [];
 try {
   try {
@@ -289,6 +290,14 @@ try {
   }
 } catch (err) {
   console.warn('⚠️ Matcher cliente/palavra comum indisponível; usando destaque legado: ' + err.message);
+}
+
+function mlClientInterestContext() {
+  return {
+    uf: typeof CLIENT_INTEREST_UF !== 'undefined' ? CLIENT_INTEREST_UF : (process.env.CLIENT_INTEREST_UF || process.env.UF || ''),
+    municipio: typeof CLIENT_INTEREST_MUNICIPIO !== 'undefined' ? CLIENT_INTEREST_MUNICIPIO : (process.env.CLIENT_INTEREST_MUNICIPIO || process.env.MUNICIPIO || ''),
+    casa: typeof CASA_RADAR03 !== 'undefined' ? CASA_RADAR03 : (process.env.CASA_RADAR03 || process.env.CASA || ''),
+  };
 }
 
 function clientesCitadosNaProposicao(p) {
@@ -642,13 +651,6 @@ async function enviarEmail(novas, alertas = []) {
   }
   const nodemailer = require('nodemailer');
 
-function mlClientInterestContext() {
-  return {
-    uf: typeof CLIENT_INTEREST_UF !== 'undefined' ? CLIENT_INTEREST_UF : (process.env.CLIENT_INTEREST_UF || process.env.UF || ''),
-    municipio: typeof CLIENT_INTEREST_MUNICIPIO !== 'undefined' ? CLIENT_INTEREST_MUNICIPIO : (process.env.CLIENT_INTEREST_MUNICIPIO || process.env.MUNICIPIO || ''),
-    casa: typeof CASA_RADAR03 !== 'undefined' ? CASA_RADAR03 : (process.env.CASA_RADAR03 || process.env.CASA || ''),
-  };
-}
 
   const transporter = nodemailer.createTransport({ service: 'gmail', auth: { user: process.env.EMAIL_REMETENTE, pass: process.env.EMAIL_SENHA } });
   const novasOrdenadas = [...novas].sort(compararProposicoesEmail);
