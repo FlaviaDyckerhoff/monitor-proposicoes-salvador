@@ -2025,13 +2025,15 @@
     "PIN-594/2026|17/09/2026|Isabela Sousa",
     "PIN-590/2026|17/09/2026|Eliete Paraguassu Silva",
     "PIN-591/2026|17/09/2026|Silvio Humberto",
-    "PLE-266/2026|15/09/2026|Eliete Paraguassu Silva"
+    "PLE-266/2026|15/09/2026|Eliete Paraguassu Silva",
+    "PIN-602/2026|18/09/2026|Marcelo Guimarães Neto",
+    "REP-142/2026|18/09/2026|Alex Alemão"
   ],
-  "ultima_execucao": "2026-09-18T08:43:00.985Z",
+  "ultima_execucao": "2026-09-21T08:43:05.098Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 326,
     "PLE|2026": 270,
-    "PIN|2026": 601,
+    "PIN|2026": 602,
     "PRE|2026": 82,
     "RUP|2026": 31,
     "REP|2026": 142,
