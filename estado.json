@@ -2046,13 +2046,18 @@
     "PRE-82/2026|21/09/2026|Randerson Leal",
     "PIN-599/2026|21/09/2026|Silvio Humberto",
     "PIN-601/2026|21/09/2026|Alex Alemão",
-    "RUP-29/2026|21/09/2026|Ireuda Silva"
+    "RUP-29/2026|21/09/2026|Ireuda Silva",
+    "MOC-330/2026|22/09/2026|Carlos Kleber",
+    "MOC-331/2026|22/09/2026|Sandro Filho",
+    "MOC-332/2026|22/09/2026|Carlos Kleber",
+    "PIN-605/2026|22/09/2026|Silvio Humberto",
+    "PIN-602/2026|22/09/2026|Marcelo Guimarães Neto"
   ],
-  "ultima_execucao": "2026-09-22T08:43:08.516Z",
+  "ultima_execucao": "2026-09-23T08:43:04.576Z",
   "ultimos_por_tipo_ano": {
-    "MOC|2026": 329,
+    "MOC|2026": 332,
     "PLE|2026": 273,
-    "PIN|2026": 604,
+    "PIN|2026": 605,
     "PRE|2026": 82,
     "RUP|2026": 31,
     "REP|2026": 142,
