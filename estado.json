@@ -2155,9 +2155,15 @@
     "MOC-344/2026|01/10/2026|Omarzinho Gordilho",
     "MOC-340/2026|01/10/2026|Professor Hamilton",
     "MOC-338/2026|01/10/2026|Aladilce",
-    "MOC-336/2026|01/10/2026|Sandro Filho"
+    "MOC-336/2026|01/10/2026|Sandro Filho",
+    "PIN-611/2026|02/10/2026|Sandro Filho",
+    "PIN-614/2026|02/10/2026|Sandro Filho",
+    "PIN-612/2026|02/10/2026|Sandro Filho",
+    "PIN-615/2026|02/10/2026|Sandro Filho",
+    "PIN-610/2026|02/10/2026|Sandro Filho",
+    "PIN-613/2026|02/10/2026|Sandro Filho"
   ],
-  "ultima_execucao": "2026-10-02T08:42:09.030Z",
+  "ultima_execucao": "2026-10-05T08:42:10.483Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 345,
     "PLE|2026": 280,
