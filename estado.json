@@ -2204,11 +2204,17 @@
     "PIN-610/2026|06/10/2026|Sandro Filho",
     "PIN-613/2026|06/10/2026|Sandro Filho",
     "PLE-279/2026|06/10/2026|Isabela Sousa",
-    "PLE-278/2026|06/10/2026|Isabela Sousa"
+    "PLE-278/2026|06/10/2026|Isabela Sousa",
+    "MOC-347/2026|07/10/2026|Sandro Filho",
+    "PLE-283/2026|07/10/2026|Executivo Municipal",
+    "PLE-284/2026|07/10/2026|Omarzinho Gordilho",
+    "PLE-281/2026|07/10/2026|Eliete Paraguassu Silva",
+    "MOC-346/2026|07/10/2026|Aladilce",
+    "PLE-282/2026|07/10/2026|Téo Senna"
   ],
-  "ultima_execucao": "2026-10-07T08:42:08.986Z",
+  "ultima_execucao": "2026-10-08T08:42:10.403Z",
   "ultimos_por_tipo_ano": {
-    "MOC|2026": 346,
+    "MOC|2026": 347,
     "PLE|2026": 284,
     "PIN|2026": 615,
     "PRE|2026": 85,
