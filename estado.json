@@ -2217,15 +2217,19 @@
     "PLE-283/2026|08/10/2026|Executivo Municipal",
     "PLE-284/2026|08/10/2026|Omarzinho Gordilho",
     "PLE-281/2026|08/10/2026|Eliete Paraguassu Silva",
-    "PLE-282/2026|08/10/2026|Téo Senna"
+    "PLE-282/2026|08/10/2026|Téo Senna",
+    "RUP-33/2026|09/10/2026|Marta Lula Rodrigues",
+    "PIN-616/2026|09/10/2026|Professor Hamilton",
+    "PLE-285/2026|09/10/2026|Silvio Humberto",
+    "MOC-347/2026|09/10/2026|Sandro Filho"
   ],
-  "ultima_execucao": "2026-10-09T08:42:08.586Z",
+  "ultima_execucao": "2026-10-12T08:42:09.951Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 347,
     "PLE|2026": 285,
     "PIN|2026": 616,
     "PRE|2026": 85,
-    "RUP|2026": 32,
+    "RUP|2026": 33,
     "REP|2026": 143,
     "PDL|2026": 1,
     "PLC|2026": 4,
