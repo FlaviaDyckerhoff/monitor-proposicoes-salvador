@@ -2221,11 +2221,17 @@
     "RUP-33/2026|09/10/2026|Marta Lula Rodrigues",
     "PIN-616/2026|09/10/2026|Professor Hamilton",
     "PLE-285/2026|09/10/2026|Silvio Humberto",
-    "MOC-347/2026|09/10/2026|Sandro Filho"
+    "MOC-347/2026|09/10/2026|Sandro Filho",
+    "MOC-348/2026|13/10/2026|Sandro Filho",
+    "RUP-33/2026|13/10/2026|Marta Lula Rodrigues",
+    "PIN-616/2026|13/10/2026|Professor Hamilton",
+    "PLE-285/2026|13/10/2026|Silvio Humberto",
+    "MOC-347/2026|13/10/2026|Sandro Filho",
+    "MOC-346/2026|13/10/2026|Aladilce"
   ],
-  "ultima_execucao": "2026-10-13T08:42:10.892Z",
+  "ultima_execucao": "2026-10-14T08:42:03.358Z",
   "ultimos_por_tipo_ano": {
-    "MOC|2026": 347,
+    "MOC|2026": 348,
     "PLE|2026": 285,
     "PIN|2026": 616,
     "PRE|2026": 85,
