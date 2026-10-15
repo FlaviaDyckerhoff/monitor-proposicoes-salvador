@@ -2227,9 +2227,13 @@
     "PIN-616/2026|13/10/2026|Professor Hamilton",
     "PLE-285/2026|13/10/2026|Silvio Humberto",
     "MOC-347/2026|13/10/2026|Sandro Filho",
-    "MOC-346/2026|13/10/2026|Aladilce"
+    "MOC-346/2026|13/10/2026|Aladilce",
+    "MOC-348/2026|14/10/2026|Sandro Filho",
+    "RUP-33/2026|14/10/2026|Marta Lula Rodrigues",
+    "PIN-616/2026|14/10/2026|Professor Hamilton",
+    "PLE-285/2026|14/10/2026|Silvio Humberto"
   ],
-  "ultima_execucao": "2026-10-14T08:42:03.358Z",
+  "ultima_execucao": "2026-10-15T08:42:04.777Z",
   "ultimos_por_tipo_ano": {
     "MOC|2026": 348,
     "PLE|2026": 285,
