@@ -2527,18 +2527,21 @@
     "MOC-358/2026|13/11/2026|Sandro Filho",
     "PIN-646/2026|13/11/2026|Kel Torres",
     "PIN-645/2026|13/11/2026|Isabela Sousa",
-    "PIN-647/2026|13/11/2026|Claudio Tinoco"
+    "PIN-647/2026|13/11/2026|Claudio Tinoco",
+    "PLC-6/2026|18/11/2026|Executivo Municipal",
+    "PLC-5/2026|18/11/2026|Executivo Municipal",
+    "PLE-318/2026|18/11/2026|Executivo Municipal"
   ],
-  "ultima_execucao": "2026-11-16T08:42:14.226Z",
+  "ultima_execucao": "2026-11-19T08:42:11.343Z",
   "ultimos_por_tipo_ano": {
-    "MOC|2026": 364,
-    "PLE|2026": 314,
-    "PIN|2026": 649,
-    "PRE|2026": 97,
-    "RUP|2026": 37,
-    "REP|2026": 146,
+    "MOC|2026": 334,
+    "PLE|2026": 318,
+    "PIN|2026": 606,
+    "PRE|2026": 84,
+    "RUP|2026": 32,
+    "REP|2026": 143,
     "PDL|2026": 1,
-    "PLC|2026": 4,
+    "PLC|2026": 6,
     "PLE|2025": 9999
   }
 }
